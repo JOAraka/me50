@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        div{
+        }
+        .placeholder{
+            font-size: 16px;
+            text-align: left;
+            width:270px;
+        }
+        .input{
+            margin :auto;
+            display:none
+        }
+        .input input{
+            width:462px;
+        }
+        .form-field {
+            width:770px;
+        }
+        .input-field div{
+            margin-top: 10px;
+            display: inline-block;
+            padding: 0px 10px 10px 0px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <form method="get" action="https://www.google.com/search">
+        <div style="width: 755px">
+            <div style="float:left;width:49%; font-size:30px;color:red;">Advanced Search</div>
+            <div ><a href="index.html" style="width:49%;font-size: 22px; text-align: right; float: right;text-decoration-line: none">Google Search</a></div>
+        </div>
+        <div style="padding-top:10px;width: 100%; font-size:22px; float: left">Find pages with...</div>
+        <div class="form-field">
+            <div class="input-field"><div class="placeholder">all these:</div><div class="input" ><input type="text" name="as_q"></div></div>
+            <div class="input-field"><div class="placeholder">this exact word or phrase:</div><div class ="input"> <input type="text" name="as_epq"></div></div>
+            <div class="input-field"><div class="placeholder">any of these words : </div><div class ="input"><input type="text" name="as_oq"></div></div>
+            <div class="input-field"><div class="placeholder">none of these words  :</div><div class="input"><input type="text" name="as_eq"></div></div>
+            <div id="search-submit"><button style="border-radius: 2px;font-weight:bold;color:#fff;font-size:11px;text-align: center; height:30px; background-color:#4d90fe;float: right;padding-right: 10px;margin-right: 20px" type="submit" value="advanced search" name="advancedsearch">Advanced Search</button> </div></div>
+    </form>
+</div>
+</body>
+</html>
